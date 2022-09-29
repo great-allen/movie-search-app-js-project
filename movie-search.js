@@ -212,9 +212,7 @@ function getMovieInfo(e){
 }  
 //load reviews of that movie from local server
 function renderReviews(id){
-    fetch(`https://my-json-server.typicode.com/great-allen
-    /
-    local-json-server /reviews?quoteId=${id}`)
+    fetch(`https://my-json-server.typicode.com/great-allen/local-json-server-/reviews?quoteId=${id}`)
     .then(resp=>resp.json())
     .then(data=>{
         const li=document.createElement('li')
@@ -275,9 +273,7 @@ function renderReviews(id){
                     content:reviewContent.value,
                     created_at: createdDate.toString()
                 };
-                fetch(`https://my-json-server.typicode.com/great-allen
-                /
-                local-json-server `,{
+                fetch(`https://my-json-server.typicode.com/great-allen/local-json-server-`,{
                     method:'POST',
                     headers:{
                         'Content-Type': 'application/json'
