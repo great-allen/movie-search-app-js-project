@@ -212,7 +212,9 @@ function getMovieInfo(e){
 }  
 //load reviews of that movie from local server
 function renderReviews(id){
-    fetch(`http://localhost:3000/reviews?quoteId=${id}`)
+    fetch(`https://my-json-server.typicode.com/great-allen
+    /
+    local-json-server /reviews?quoteId=${id}`)
     .then(resp=>resp.json())
     .then(data=>{
         const li=document.createElement('li')
