@@ -273,7 +273,9 @@ function renderReviews(id){
                     content:reviewContent.value,
                     created_at: createdDate.toString()
                 };
-                fetch(`http://localhost:3000/reviews/`,{
+                fetch(`https://my-json-server.typicode.com/great-allen
+                /
+                local-json-server `,{
                     method:'POST',
                     headers:{
                         'Content-Type': 'application/json'
