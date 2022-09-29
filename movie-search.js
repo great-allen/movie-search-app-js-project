@@ -215,6 +215,7 @@ function renderReviews(id){
     fetch(`https://my-json-server.typicode.com/great-allen/local-json-server-/reviews?quoteId=${id}`)
     .then(resp=>resp.json())
     .then(data=>{
+        //console.log(data);
         const li=document.createElement('li')
         const p=document.createElement('p')
         for(let i=0;i<data.length;i++){
